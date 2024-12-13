@@ -1,0 +1,94 @@
+body {
+  background-color: black;
+  margin: 0px;
+  height: 100vh;
+  background: radial-gradient(navy, black);
+
+}
+
+* {
+  font-family: "Tektur";
+}
+
+#app {
+  width: 100%;
+  display: grid;
+  margin: 0 auto;
+
+}
+
+.titleDiv {
+  display: grid;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 0px;
+  color: white;
+  text-align: center;
+  z-index: 1000;
+}
+  
+.titleDiv a {
+  margin: 0 auto;
+  font-family: "Tektur", system-ui;
+  color: Orange;
+  font-size: 2.5em ;
+  text-decoration: none;
+}
+
+#game {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  border: 4px dashed white;
+  box-shadow: 0px 0px 40px 5px black;
+  background-color: black;
+
+
+}
+
+#btnDiv {
+  display: flex;
+  margin: 20px auto;
+
+}
+
+#startBtn, #resetBtn {
+  margin: 10px 20px;
+  width: 200px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: yellow;
+  background-color: #47F5A1;
+  padding: 20px;
+  font-weight: bolder;
+  font-size: 25px;
+  color: black;
+
+}
+
+#resetBtn {
+  background-color: red;
+  background-color: #F55C47;
+}
+
+.cell {
+  box-sizing:border-box;
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.cell:hover {
+  background-color: white !important;
+}
+
+@keyframes glowing {
+  50% {  background-color: yellow;}
+  100% { background-color: black;}
+}
+
+.flash {
+  animation: glowing 3000ms 1;
+}
